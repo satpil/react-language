@@ -7,7 +7,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // have a look at the Quick start guide 
 // for passing in lng and translations on init
 const detectionOptions = {
-    order: ['path', 'cookie', 'navigator', 'localStorage', 'subdomain', 'queryString', 'htmlTag'],
+    order: ['path', 'cookie', 'navigator', 'subdomain', 'queryString', 'htmlTag'],
     lookupFromPathIndex: 0
 
 }
