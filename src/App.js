@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import { withTranslation } from 'react-i18next';
 
-function App() {
+function App({ t, i18n }) {
   return (
     <div className="App">
       <header className="App-header">
@@ -15,11 +16,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {t('title')}
         </a>
       </header>
     </div>
   );
 }
 
-export default App;
+export default withTranslation()(App);
